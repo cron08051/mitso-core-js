@@ -366,7 +366,6 @@ function getItemsSum(arr) {
   return arr.reduce((acc, num) => acc + num, 0);
 }
 
-
 /**
  * Returns the number of all falsy value in the specified array
  *
@@ -379,8 +378,8 @@ function getItemsSum(arr) {
  *  [ -1, 'false', null, 0 ] => 2
  *  [ null, undefined, NaN, false, 0, '' ]  => 6
  */
-function getFalsyValuesCount(/* arr */) {
-  throw new Error('Not implemented');
+function getFalsyValuesCount(arr) {
+  return arr.filter((value) => !value).length;
 }
 
 /**
